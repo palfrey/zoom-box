@@ -1,0 +1,5 @@
+*.img
+*.xz
+__pycache__/
+zoom-box/
+old/
