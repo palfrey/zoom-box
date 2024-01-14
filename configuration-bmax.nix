@@ -18,7 +18,7 @@ in
   imports =
     [
       # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
     ];
 
   # Bootloader.
@@ -91,7 +91,7 @@ in
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.palfrey = {
+  users.users.(core-user) = {
     isNormalUser = true;
     description = core-user;
     extraGroups = [ "networkmanager" "wheel" ];
@@ -113,22 +113,22 @@ in
       firefox
       zoom-link
     ];
-    # etc = {
-    #   "modprobe.d/alsa-base.conf".text = "options snd-hda-intel dmic_detect=0";
-    #   "modprobe.d/blacklist.conf".text = "blacklist snd_soc_skl";
-    # }
-  };
+    etc = {
+      "modprobe.d/alsa-base.conf".text = "options snd-hda-intel dmic_detect=0";
+      "modprobe.d/blacklist.conf".text = "blacklist snd_soc_skl";
+    }
+      };
 
-  # List services that you want to enable:
+    # List services that you want to enable:
 
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+    # Enable the OpenSSH daemon.
+    services.openssh.enable = true;
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.05"; # Did you read the comment?
-}
+    # This value determines the NixOS release from which the default
+    # settings for stateful data, like file locations and database versions
+    # on your system were taken. It‘s perfectly fine and recommended to leave
+    # this value at the release version of the first install of this system.
+    # Before changing this value read the documentation for this option
+    # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+    system.stateVersion = "23.05"; # Did you read the comment?
+  }
