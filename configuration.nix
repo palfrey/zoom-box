@@ -78,6 +78,8 @@ in
     };
   };
 
+  environment.xfce.excludePackages = [ pkgs.xfce.xfce4-volumed-pulse ];
+
   # Configure console keymap
   console.keyMap = "uk";
 
@@ -97,7 +99,7 @@ in
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Allow unfree packages
+  # Allow unfree Zoom packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
@@ -105,11 +107,12 @@ in
   environment = {
     systemPackages = with pkgs; [
       vim
+      #updated_zoom.zoom-us
       zoom-us
       htop
       pavucontrol
-      pciutils
-      lshw
+      #pciutils
+      #lshw
       firefox
       zoom-link
     ];
@@ -131,4 +134,6 @@ in
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
+
+  nix.settings.experimental-features = "nix-command flakes";
 }
