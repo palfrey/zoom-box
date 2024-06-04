@@ -1,0 +1,10 @@
+---
+environment: box
+data_path: .
+servers:
+    - name: zoom-box
+      count: 0
+      ssh_hostname: 192.168.1.50
+      ssh_port: 22
+      ssh_key: ~/.ssh/id_rsa
+      ssh_user: palfrey

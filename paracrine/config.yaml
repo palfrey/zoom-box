@@ -1,0 +1,4 @@
+---
+environments:
+    box:
+        ZOOM_URL: http://zoom.bar
