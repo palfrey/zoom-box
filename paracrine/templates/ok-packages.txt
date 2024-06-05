@@ -1,3 +1,4 @@
+accountsservice
 alsa-tools
 alsa-tools-gui
 alsa-topology-conf
@@ -12,11 +13,13 @@ base-passwd
 bash
 bsdutils
 busybox
+ca-certificates
 console-setup
 curl
 dash
 debconf-i18n
 deborphan
+desktop-base
 diffutils
 discover
 dns-root-data
@@ -29,6 +32,7 @@ enchant-2
 exfatprogs
 file
 findutils
+firefox-esr
 firefox-esr-l10n-en-gb
 firmware-linux-free
 firmware-misc-nonfree
@@ -71,6 +75,8 @@ laptop-detect
 less
 libglib2.0-bin
 light-locker
+lightdm
+lightdm-autologin-greeter
 linux-image-6.1.0-18-amd64
 linux-image-6.1.0-21-amd64
 linux-image-amd64
@@ -83,6 +89,7 @@ mythes-en-us
 nano
 ncurses-bin
 ncurses-term
+netbase
 network-manager-gnome
 nftables
 orca
@@ -92,6 +99,7 @@ parole
 pavucontrol
 pciutils
 plymouth-label
+policykit-1
 polkitd-pkla
 popularity-contest
 psutils
@@ -102,9 +110,11 @@ python3-pyinotify
 python3-smbc
 python3-uno
 rtkit
+sed
 shim-signed
 sound-icons
 sudo
+systemd-timesyncd
 sysvinit-utils
 tango-icon-theme
 task-british-desktop
@@ -133,9 +143,11 @@ xcvt
 xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
+xfce4
 xfce4-goodies
 xfce4-power-manager-plugins
 xiccd
+xorg
 xserver-xorg-legacy
 zoom
 zstd

@@ -3,3 +3,4 @@
 __pycache__/
 zoom-box/
 old/
+.vagrant/

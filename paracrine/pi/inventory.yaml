@@ -4,7 +4,7 @@ data_path: .
 servers:
     - name: zoom-pi
       count: 0
-      ssh_hostname: raspberrypi #192.168.1.156
+      ssh_hostname: raspberrypi
       ssh_port: 22
       ssh_key: ~/.ssh/id_rsa
       ssh_user: pi

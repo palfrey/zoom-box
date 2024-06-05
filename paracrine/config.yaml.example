@@ -1,0 +1,8 @@
+---
+environments:
+    box:
+        ZOOM_URL: http://zoom.bar
+        USER: palfrey
+    vagrant:
+        ZOOM_URL: http://zoom.bar
+        USER: vagrant
