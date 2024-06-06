@@ -10,7 +10,7 @@ let
     name = "zoom-link";
     destination = "/home/" + core-user + "/Desktop/zoom-link.html";
     text = ''
-      <a href="https://us04web.zoom.us/j/5648707839?pwd=eGqsghELAHAIAs0BArrDo4Lk1N0OqN.1">Tom personal zoom room</a>
+      <a href="http://zoom.url">personal zoom room</a>
     '';
   };
 in
